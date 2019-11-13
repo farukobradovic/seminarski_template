@@ -93,6 +93,11 @@ body {
 a {
   text-decoration: none; }
 
+.message-danger {
+  font-size: 1.4rem;
+  color: red;
+  margin-top: 0.3rem; }
+
 .linkButton {
   font-size: 1.3rem;
   display: inline-block;
@@ -640,12 +645,16 @@ a {
       .container-main .board .profile-form form .form-inputs {
         margin-bottom: 1rem;
         display: flex;
-        align-items: center; }
+        align-items: center;
+        flex-direction: column; }
+        .container-main .board .profile-form form .form-inputs .upper {
+          display: flex;
+          width: 100%; }
         .container-main .board .profile-form form .form-inputs #student {
           width: auto; }
         .container-main .board .profile-form form .form-inputs label {
           font-size: 1.4rem;
-          width: 20%; }
+          width: 20rem; }
         .container-main .board .profile-form form .form-inputs input,
         .container-main .board .profile-form form .form-inputs select,
         .container-main .board .profile-form form .form-inputs textarea {

@@ -106,72 +106,104 @@
             <h1>Registracija korisnika</h1>
             <form action="#">
               <div class="form-inputs">
-                <label for="user-type">Vrsta korisnika</label>
-                <select>
-                  <option value="trener">Trener</option>
-                  <option value="clan">Član</option>
-                  <option value="admin">Admin</option>
-                </select>
+                <div class="upper">
+                  <label for="user-type">Vrsta korisnika</label>
+                  <select>
+                    <option value="trener">Trener</option>
+                    <option value="clan">Član</option>
+                    <option value="admin">Admin</option>
+                  </select>
+                </div>
               </div>
               <div class="form-inputs">
-                <label for="name">Ime</label>
-                <input type="text" placeholder="Vaše ime" id="name" />
+                <div class="upper">
+                  <label for="name">Ime</label>
+                  <input type="text" placeholder="Vaše ime" id="name" />
+                </div>
               </div>
               <div class="form-inputs">
-                <label for="lastName">Prezime</label>
-                <input type="text" placeholder="Vaše prezime" id="lastName" />
+                <div class="upper">
+                  <label for="lastName">Prezime</label>
+                  <input type="text" placeholder="Vaše prezime" id="lastName" />
+                </div>
               </div>
               <div class="form-inputs">
-                <label for="birthdate">Datum rođenja</label>
-                <input
-                  type="text"
-                  placeholder="Vaš datum rođenja"
-                  id="birthdate"
-                />
+                <div class="upper">
+                  <label for="birthdate">Datum rođenja</label>
+                  <input
+                    type="text"
+                    placeholder="Vaš datum rođenja"
+                    id="birthdate"
+                  />
+                </div>
+                <span class="message-danger"
+                  >The value Datum rođenja is invalid</span
+                >
               </div>
               <div class="form-inputs">
-                <label for="student">Student</label>
-                <input type="checkbox" id="student" />
+                <div class="upper">
+                  <label for="student">Student</label>
+                  <input type="checkbox" id="student" />
+                </div>
               </div>
               <div class="form-inputs">
-                <label for="telephone">Telefon</label>
-                <input
-                  type="text"
-                  id="telephone"
-                  placeholder="Vaš broj telefona"
-                />
+                <div class="upper">
+                  <label for="telephone">Telefon</label>
+                  <input
+                    type="text"
+                    id="telephone"
+                    placeholder="Vaš broj telefona"
+                  />
+                </div>
+                <span class="message-danger"
+                  >The value Datum rođenja is invalid</span
+                >
               </div>
               <div class="form-inputs">
-                <label for="email">Email</label>
-                <input type="text" id="email" placeholder="Vaš email" />
+                <div class="upper">
+                  <label for="email">Email</label>
+                  <input type="text" id="email" placeholder="Vaš email" />
+                </div>
               </div>
               <div class="form-inputs">
-                <label for="certificate">Certifikat</label>
-                <input
-                  type="text"
-                  id="certificate"
-                  placeholder="Naziv certifikata"
-                />
+                <div class="upper">
+                  <label for="certificate">Certifikat</label>
+                  <input
+                    type="text"
+                    id="certificate"
+                    placeholder="Naziv certifikata"
+                  />
+                </div>
               </div>
               <div class="form-inputs">
-                <label for="dateCertificate">Datum polaganja</label>
-                <input
-                  type="text"
-                  id="dateCertificate"
-                  placeholder="Datum stjecanja certifikata"
-                />
+                <div class="upper">
+                  <label for="dateCertificate">Datum polaganja</label>
+                  <input
+                    type="text"
+                    id="dateCertificate"
+                    placeholder="Datum stjecanja certifikata"
+                  />
+                </div>
               </div>
               <div class="form-inputs">
-                <label for="pw">Šifra</label>
-                <input
-                  type="password"
-                  id="pw"
-                  placeholder="Vaša šifra za logiranje"
-                />
+                <div class="upper">
+                  <label for="pw">Šifra</label>
+                  <input
+                    type="password"
+                    id="pw"
+                    placeholder="Vaša šifra za logiranje"
+                  />
+                </div>
               </div>
               <div class="form-inputs">
-                <label for="pw">Potvrdi šifru</label>
-                <input type="password" id="pw" placeholder="Potvrdite šifru" />
+                <div class="upper">
+                  <label for="pw">Potvrdi šifru</label>
+                  <input
+                    type="password"
+                    id="pw"
+                    placeholder="Potvrdite šifru"
+                  />
+                </div>
               </div>
               <button type="submit" class="submit-form">
                 <i class="fas fa-save"></i> Potvrdi
