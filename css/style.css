@@ -515,6 +515,9 @@ a {
         text-align: left;
         background-color: #1e1e2d;
         color: white; }
+    .container-main .board .search-section {
+      display: flex;
+      align-items: center; }
     .container-main .board .search-bar {
       margin-bottom: 3rem;
       padding: 0.5rem;
