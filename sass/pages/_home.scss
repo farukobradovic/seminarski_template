@@ -561,10 +561,7 @@ a {
         color: white;
       }
     }
-    .search-section {
-      display: flex;
-      align-items: center;
-    }
+
     .search-bar {
       margin-bottom: 3rem;
       padding: 0.5rem;
@@ -592,6 +589,7 @@ a {
         padding-right: 1.5rem;
       }
     }
+
     .users-grid {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
