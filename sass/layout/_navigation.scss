@@ -7,7 +7,10 @@
   background: #1e1e2d;
   position: fixed;
   //   padding: 3rem;
-
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
   .heading-logo {
     color: var(--color-t-light);
     padding-top: 1rem;
