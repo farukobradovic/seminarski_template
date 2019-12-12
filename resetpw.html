@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>MoFitness | XY User</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://kit.fontawesome.com/78ef64fa4d.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container-no-flex">
+      <div
+        class="form-secondary"
+        style="margin:auto; max-width: 100rem; text-align:center;"
+      >
+        <h1>Resetujte šifru</h1>
+        <form method="post">
+          <input asp-for="Token" type="hidden" />
+          <input asp-for="Email" type="hidden" />
+          <div class="form-inputs">
+            <div class="upper">
+              <label asp-for="Password">Šifra</label>
+              <input
+                asp-for="Password"
+                type="text"
+                placeholder="Unesite novu šifru"
+              />
+            </div>
+
+            <span asp-validation-for="Password" class="message-danger"></span>
+          </div>
+          <div class="form-inputs">
+            <div class="upper">
+              <label asp-for="ConfirmPassword">Potvrdi šifru</label>
+              <input
+                asp-for="ConfirmPassword"
+                type="text"
+                placeholder="Potvrdite šifru"
+              />
+            </div>
+
+            <span
+              asp-validation-for="ConfirmPassword"
+              class="message-danger"
+            ></span>
+          </div>
+          <button type="submit" class="submit-form">
+            <i class="fas fa-save"></i> Potvrdi
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
